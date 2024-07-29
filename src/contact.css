@@ -1,0 +1,152 @@
+.contact-container{
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.c-left{
+  width: 100%;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  color: var(--main-4);
+  font-size: 0.9rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  font-size: 0.9rem;
+  padding: 0.1rem 0.5rem;
+  margin: 1rem auto;
+  background-color: var(--main-5);
+  color: var(--main-4);
+  outline: none;
+  border: 1px solid var(--main-4);
+  border-radius: 0.8rem;
+}
+.btn {
+  width: 80%;
+  margin: auto;
+  border: 1px solid var(--main-4);
+  font-size: 1rem;
+  border-radius: 1rem;
+  color: var(--main-5) !important;
+  background-color: var(--main-1) !important;
+}
+.btn:hover{
+    background-color: var(--main-5) !important;
+    color: var(--main-1) !important;
+    border-color: var(--main-1);
+}
+.c-right {
+  margin-top: 1rem;
+}
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-item .icon {
+  color: var(--main-2);
+  font-size: 1.5rem;
+}
+.contact-item p {
+  color: var(--main-4);
+  font-size: 1.1rem;
+  padding: 0 1rem;
+}
+footer p {
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--main-4);
+}
+@media screen and (min-width: 375px) {
+  .contact-item {
+    font-size: 1.2rem;
+  }
+  .contact-form input::placeholder {
+    font-size: 1.1rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .contact-item {
+    flex-direction: row;
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+  }
+  .contact-item {
+    justify-content: flex-start;
+  }
+  .contact .home-contact .contact-item {
+    justify-content: center;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact-item .icon {
+    font-size: 1.7rem;
+  }
+  .contact-item p {
+    font-size: 1.3rem;
+  }
+  .contact .home-contact {
+    justify-content: space-around;
+  }
+  .btn {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .c-right {
+    zoom: 1.4;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    zoom: 1.4;
+  }
+  .btn {
+    zoom: 1.4;
+  }
+  footer {
+    zoom: 1.4;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .c-right {
+    zoom: 1.6;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    zoom: 1.6;
+  }
+  .btn {
+    zoom: 1.6;
+  }
+  footer {
+    zoom: 1.7;
+  }
+}
